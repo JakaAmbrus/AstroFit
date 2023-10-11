@@ -1,0 +1,37 @@
+#header-main-container {
+  display: flex;
+  justify-content: center;
+  background: black;
+  position: sticky;
+  top: 0;
+  height: 8em;
+}
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 2000px;
+}
+#header-logo-container {
+  margin-left: 2em;
+  height: 75%;
+}
+#header-logo {
+  height: 100%;
+}
+#header-navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-size: 2em;
+}
+.navigation-links {
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.1em;
+}
+.navigation-links:hover {
+  color: #ff4601;
+}

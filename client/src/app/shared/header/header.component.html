@@ -1,0 +1,17 @@
+<header id="header-main-container">
+  <div id="header-container">
+    <div id="header-logo-container">
+      <img
+        src="assets/img/AstrofitLogoOrange.jpg"
+        alt="AstroFit Logo"
+        id="header-logo"
+      />
+    </div>
+    <nav id="header-navigation">
+      <div *ngFor="let link of navLinks">
+        <a [href]="link.path" class="navigation-links">{{ link.label }}</a>
+      </div>
+    </nav>
+    <div id="header-right"></div>
+  </div>
+</header>
