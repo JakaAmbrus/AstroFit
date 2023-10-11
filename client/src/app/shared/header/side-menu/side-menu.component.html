@@ -1,0 +1,10 @@
+<nav id="side-menu-navigation" [class.active]="isActive">
+  <div *ngFor="let link of navLinks" (click)="toggleMenu()">
+    <a [routerLink]="link.path" class="navigation-links-side-menu">{{
+      link.label
+    }}</a>
+  </div>
+  <button id="side-menu-button" (click)="toggleMenu()">
+    <mat-icon id="close-icon">close</mat-icon>
+  </button>
+</nav>

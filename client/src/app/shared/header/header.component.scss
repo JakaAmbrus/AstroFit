@@ -1,10 +1,13 @@
 #header-main-container {
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
   display: flex;
   justify-content: center;
   background: black;
   position: sticky;
+  z-index: 100;
   top: 0;
-  height: 8em;
+  height: 9em;
 }
 #header-container {
   display: flex;
@@ -12,26 +15,118 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 2000px;
 }
-#header-logo-container {
-  margin-left: 2em;
-  height: 75%;
-}
+
 #header-logo {
-  height: 100%;
+  height: 68%;
+  margin-left: 1em;
 }
 #header-navigation {
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  gap: 2em;
-  font-size: 2em;
+  gap: 1em;
+  font-size: 1.85em;
 }
+
 .navigation-links {
   transition: color 0.2s ease-in-out;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
 }
 .navigation-links:hover {
   color: #ff4601;
+}
+#header-right {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  height: 4.5em;
+  margin-right: 2em;
+}
+.header-icons {
+  width: 1em;
+  height: 1em;
+  color: white;
+  font-size: 3.5em;
+  transition: color 0.2s ease-in-out;
+}
+.header-icons:hover {
+  color: #ff4601;
+}
+
+#login-link-container {
+  border: 0.2em solid rgba(255, 255, 255, 0.445);
+  border-radius: 0.3em;
+  padding: 0.8em;
+}
+#login-link-content-container {
+  display: flex;
+  align-items: center;
+}
+.login-link-icon-container {
+  height: 3.7em;
+  width: 3.7em;
+  background-color: #ff4601;
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.15s ease;
+}
+
+.login-icon {
+  font-size: 3.5em;
+  height: 1em;
+  width: 1em;
+}
+.login-link-text {
+  color: white;
+  font-size: 2.3em;
+  letter-spacing: 0.06em;
+  margin: 0 0.8em 0 0.5em;
+  transition: all 0.5s ease-in;
+}
+.login-link-icon-hover {
+  animation: loginIcon 0.5s ease forwards;
+}
+.login-text-hover {
+  transform: scale(1.02);
+}
+#menu-icon {
+  display: none;
+  transform: scaleY(1.5);
+  position: relative;
+}
+#menu-icon > img {
+  height: 100%;
+  width: 100%;
+}
+@keyframes loginIcon {
+  30% {
+    background-color: white;
+    color: white;
+  }
+  99% {
+    background-color: rgb(255, 255, 255);
+    color: #ff4601;
+  }
+  100% {
+    background-color: white;
+    color: #ff4601;
+  }
+}
+@media (min-width: 2000px) {
+  #header-main-container {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1300px) {
+  #header-navigation {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+  }
 }

@@ -20,14 +20,13 @@ $primaryColor: #ff4601;
 }
 body {
   width: 100%;
+  height: 100%;
   font-size: 10px;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
-  font-family: "Orbitron", sans-serif;
 }
 #app-container {
   display: flex;
@@ -37,7 +36,7 @@ body {
   width: 100%;
 }
 #content-wrapper {
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 h1,
@@ -64,7 +63,12 @@ video {
   max-width: 100%;
   height: auto;
 }
-
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }

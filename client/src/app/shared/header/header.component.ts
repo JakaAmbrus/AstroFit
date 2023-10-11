@@ -7,4 +7,9 @@ import { navigationLinks } from './nav-links';
 })
 export class HeaderComponent {
   navLinks = navigationLinks;
+  isHovered = false;
+
+  onHover(hovering: boolean): void {
+    this.isHovered = hovering;
+  }
 }

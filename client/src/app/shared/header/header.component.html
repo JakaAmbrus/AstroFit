@@ -1,17 +1,52 @@
 <header id="header-main-container">
   <div id="header-container">
-    <div id="header-logo-container">
-      <img
-        src="assets/img/AstrofitLogoOrange.jpg"
-        alt="AstroFit Logo"
-        id="header-logo"
-      />
-    </div>
+    <img
+      src="assets/img/AstrofitLogoOrange.jpg"
+      alt="AstroFit Logo"
+      id="header-logo"
+    />
+
     <nav id="header-navigation">
       <div *ngFor="let link of navLinks">
-        <a [href]="link.path" class="navigation-links">{{ link.label }}</a>
+        <a [routerLink]="link.path" class="navigation-links">{{
+          link.label
+        }}</a>
       </div>
     </nav>
-    <div id="header-right"></div>
+    <div id="header-right">
+      <!-- <a href="#" id="menu-icon">
+        <img src="../assets/img/menu.png" alt="Dropdown Menu" />
+      </a> -->
+      <mat-icon
+        class="header-icons"
+        id="menu-icon"
+        (click)="sideMenu.toggleMenu()"
+        >menu</mat-icon
+      >
+      <mat-icon class="header-icons">account_circle</mat-icon>
+      <mat-icon class="header-icons">shopping_cart</mat-icon>
+      <a
+        href="#"
+        id="login-link-container"
+        (mouseover)="onHover(true)"
+        (mouseout)="onHover(false)"
+      >
+        <div id="login-link-content-container">
+          <div
+            class="login-link-icon-container"
+            [ngClass]="{ 'login-link-icon-hover': isHovered }"
+          >
+            <mat-icon class="login-icon">login</mat-icon>
+          </div>
+          <div
+            class="login-link-text"
+            [ngClass]="{ 'login-text-hover': isHovered }"
+          >
+            Login
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </header>
+<app-side-menu #sideMenu></app-side-menu>

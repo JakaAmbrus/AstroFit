@@ -1,0 +1,54 @@
+#side-menu-navigation {
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  transition: left 0.3s ease-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+#side-menu-navigation.active {
+  left: 0;
+}
+.navigation-links-side-menu {
+  color: black;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+}
+
+#side-menu-button {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  height: 5em;
+  width: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+#close-icon {
+  font-size: 5em;
+  width: 100%;
+  height: 100%;
+}
+@media (orientation: portrait) and (max-width: 1100px) {
+  #side-menu-navigation {
+    font-size: 1.5vh;
+  }
+}
+@media (orientation: portrait) and (min-height: 2500px) {
+  #side-menu-navigation {
+    font-size: 1.5vh;
+  }
+}
