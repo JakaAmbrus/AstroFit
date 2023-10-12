@@ -15,6 +15,7 @@ import { ToolsComponent } from './tools/tools.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { SideMenuComponent } from './shared/header/side-menu/side-menu.component';
+import { TitleComponentComponent } from './shared/title-component/title-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { SideMenuComponent } from './shared/header/side-menu/side-menu.component
     ServicesComponent,
     ContactComponent,
     SideMenuComponent,
+    TitleComponentComponent,
   ],
   imports: [
     BrowserModule,

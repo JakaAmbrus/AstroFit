@@ -1,1 +1,21 @@
-<p>home works!</p>
+<section
+  id="landing-page-container"
+  [ngClass]="{ 'landing-page-container-hover': isHovered }"
+>
+  <div id="landing-page-content-container">
+    <div id="landing-page-content">
+      <p id="go-beyond">GO BEYOND</p>
+      <p id="get-astrofit">GET ASTROFIT</p>
+      <p id="landing-page-slogan">
+        Navigate our vast selection of services and features custom-crafted to
+        reach your fitness pinnacle.
+      </p>
+      <a
+        (mouseover)="onHover(true)"
+        (mouseout)="onHover(false)"
+        id="landing-page-button"
+        >Join our community &rArr;</a
+      >
+    </div>
+  </div>
+</section>

@@ -1,4 +1,5 @@
-export const navigationLinks = [
+type Navigation = { path: string; label: string }[];
+export const navigationLinks: Navigation = [
   { path: '/home', label: 'Home' },
   { path: '/shop', label: 'Store' },
   { path: '/workouts', label: 'Workouts' },
