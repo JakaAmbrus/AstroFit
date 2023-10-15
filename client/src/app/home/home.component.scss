@@ -122,7 +122,7 @@
   left: 0;
   border: 0 solid #ff4601;
   box-sizing: border-box;
-  transition: all 0.1s 0.22s;
+  transition: all 0.1s 0.2s;
 }
 .button-inline-content:hover {
   border: 0.3em solid #ff4601;
@@ -135,8 +135,8 @@
   gap: 0em;
 }
 .button:hover {
-  background-color: white;
-  color: #ff4601;
+  background-color: black;
+  // color: #ff4601;
 }
 .button-content-icon {
   font-size: 1.5em;
