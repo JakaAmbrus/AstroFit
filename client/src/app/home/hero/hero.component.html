@@ -1,0 +1,27 @@
+<section id="landing-page-container">
+  <div
+    id="landing-page-content-container"
+    [ngClass]="{ 'landing-page-container-hover': isHovered }"
+  >
+    <div id="landing-page-content">
+      <p id="go-beyond">GO BEYOND</p>
+      <p id="get-astrofit">GET ASTROFIT</p>
+      <p id="landing-page-slogan">
+        Navigate our vast selection of services and features custom-crafted to
+        reach your fitness pinnacle.
+      </p>
+
+      <app-button-component
+        (mouseover)="onHover(true)"
+        (mouseout)="onHover(false)"
+      >
+        JOIN OUR COMMUNITY
+      </app-button-component>
+    </div>
+    <div id="hero-social-links">
+      <i class="fa-brands fa-twitter hero-icons"></i>
+      <i class="fa-brands fa-facebook hero-icons"></i>
+      <i class="fa-brands fa-instagram hero-icons"></i>
+    </div>
+  </div>
+</section>

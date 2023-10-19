@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
-  isHovered = false;
-
-  onHover(hovering: boolean): void {
-    this.isHovered = hovering;
-  }
-}
+export class HomeComponent {}

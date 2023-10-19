@@ -1,0 +1,67 @@
+.feature-card {
+  width: 30em; /* Adjust as needed */
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.feature-card:hover {
+  transform: translateY(-0.15em);
+}
+
+.feature-card.highlighted {
+  background-color: #ff5500;
+  color: #fff;
+}
+
+.feature-icons {
+  font-size: 5em;
+  color: #ff5500;
+  height: 1em;
+  width: 1em;
+  transition: all 0.3s ease;
+}
+.feature-icons.highlighted {
+  color: white;
+}
+.feature-title {
+  font-size: 2.6em;
+  font-family: "Roboto Bold";
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+.feature-text {
+  font-size: 1.8em;
+  font-family: "Roboto";
+}
+.arrow {
+  color: #ff5500;
+  font-size: 3em;
+  margin-top: 0.3em;
+  width: 1em;
+  transition: all 0.3s ease;
+}
+.arrow.highlighted {
+  color: white;
+}
+@media (max-width: 1400px) {
+  .feature-card {
+    width: 45vw;
+  }
+}
+@media (max-width: 550px) and (orientation: portrait) {
+  .feature-card {
+    height: 40vh;
+    width: 48vw;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .feature-card {
+    height: 45vh;
+    min-width: 150px;
+  }
+}

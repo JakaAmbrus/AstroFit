@@ -16,6 +16,10 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { SideMenuComponent } from './shared/header/side-menu/side-menu.component';
 import { TitleComponentComponent } from './shared/small-components/title-component/title-component.component';
+import { ButtonComponentComponent } from './shared/small-components/button-component/button-component.component';
+import { HeroComponent } from './home/hero/hero.component';
+import { FeatureCardComponent } from './shared/small-components/feature-card/feature-card.component';
+import { AboutComponent } from './home/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,10 @@ import { TitleComponentComponent } from './shared/small-components/title-compone
     ContactComponent,
     SideMenuComponent,
     TitleComponentComponent,
+    ButtonComponentComponent,
+    HeroComponent,
+    FeatureCardComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

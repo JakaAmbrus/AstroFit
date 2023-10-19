@@ -1,0 +1,21 @@
+<div class="button-container">
+  <div
+    class="button-wrapper"
+    [ngClass]="{ 'button-wrapper-hover': isHovered }"
+  ></div>
+  <div
+    class="button-wrapper-2"
+    [ngClass]="{ 'button-wrapper-hover': isHovered }"
+  ></div>
+  <a
+    (mouseover)="onButtonHover(true)"
+    (mouseout)="onButtonHover(false)"
+    class="button"
+  >
+    <div class="button-inline-content"></div>
+    <div class="button-content">
+      <ng-content></ng-content>
+      <mat-icon class="button-content-icon">arrow_forward</mat-icon>
+    </div>
+  </a>
+</div>

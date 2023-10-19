@@ -1,0 +1,14 @@
+<div
+  class="feature-card"
+  (mouseover)="onHover(true)"
+  (mouseout)="onHover(false)"
+  [ngClass]="{ highlighted: isHovered }"
+>
+  <mat-icon class="feature-icons" [ngClass]="{ highlighted: isHovered }">{{
+    iconName
+  }}</mat-icon>
+
+  <div class="feature-title">{{ title }}</div>
+  <div class="feature-text">{{ description }}</div>
+  <mat-icon class="arrow" [ngClass]="{ highlighted: isHovered }">east</mat-icon>
+</div>

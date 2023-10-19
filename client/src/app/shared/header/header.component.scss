@@ -6,7 +6,7 @@
   background: black;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 100;
+  z-index: 10000;
   top: 0;
   height: 9em;
 }
@@ -35,7 +35,7 @@
   letter-spacing: 0.12em;
 }
 .navigation-links:hover {
-  color: #ff4601;
+  color: #ff5500;
 }
 #header-right {
   font-size: 1em;
@@ -53,7 +53,7 @@
   transition: color 0.2s ease-in-out;
 }
 .header-icons:hover {
-  color: #ff4601;
+  color: #ff5500;
 }
 
 #login-link-container {
@@ -68,7 +68,7 @@
 .login-link-icon-container {
   height: 3.7em;
   width: 3.7em;
-  background-color: #ff4601;
+  background-color: #ff5500;
   border-radius: 0.3em;
   display: flex;
   justify-content: center;
@@ -81,19 +81,21 @@
   font-size: 3.5em;
   height: 1em;
   width: 1em;
+  transition: all 0.2s;
 }
 .login-link-text {
   color: white;
   font-size: 2.3em;
   letter-spacing: 0.06em;
   margin: 0 0.8em 0 0.5em;
-  transition: all 0.5s ease;
+  transition: all 0.4s;
 }
 .login-link-icon-hover {
-  animation: loginIcon 0.5s ease forwards;
+  color: #ff5500;
+  background-color: white;
 }
 .login-text-hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 #menu-icon {
   display: none;
@@ -104,20 +106,7 @@
   height: 100%;
   width: 100%;
 }
-@keyframes loginIcon {
-  30% {
-    background-color: white;
-    color: white;
-  }
-  99% {
-    background-color: rgb(255, 255, 255);
-    color: #ff4601;
-  }
-  100% {
-    background-color: white;
-    color: #ff4601;
-  }
-}
+
 @media (min-width: 2000px) {
   #header-main-container {
     font-size: 12px;
